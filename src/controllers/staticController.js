@@ -1,5 +1,5 @@
 module.exports = {
     index(req, res, next){
-        res.send("Welcome to Qweerty Gamers");
+        res.render("static/index");
     }
 }
