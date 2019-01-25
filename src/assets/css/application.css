@@ -1,3 +1,29 @@
 body {
     padding-top: 54px;
 }
+
+#slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    position: relative;
+    width: 705px;
+    float: left;
+    list-style:none;
+    width: 70%;
+    height: auto;
+    padding: 10%;
+}
+
+.navbar-brand img {
+    position: relative;
+    width: 300px;
+    left: 8px;
+    max-height: 100px; /* height of the navbar */
+    padding: 0;
+}
+
