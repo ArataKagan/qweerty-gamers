@@ -21,13 +21,20 @@
 
     <div id="news">
         <h2>Today's LGBT News</h2>
-        <% console.log(response.articles) %>
-        <% console.log(response.articles.length) %>
-        <% for(i of response.articles) { %>
-            <% console.log(i.title) %>
-            <p><%= i.title %></p>
-            <p><%= i.source.name %></p>
-        <% } %>
+        <div class="content-slider">
+            <div class="slider">
+                <div class="mask">
+                    <% for(i of response.articles) { %>
+                         <ul>
+                            <li class="anim">
+                             <div class="quote"><%= i.title %></div>
+                             <div class="source"><%= i.source.name %></div>
+                            </li>
+                         </ul>
+                    <% } %>
+                </div>
+            </div>
+        </div>
     </div>
         
         <% include ./partials/baseScripts.ejs %>
