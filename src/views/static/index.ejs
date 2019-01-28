@@ -13,7 +13,7 @@
                             <img class="d-block w-100" src="css/qg_lp.png" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="css/qg_lp2.png" alt="Second slide">
+                            <img class="d-block w-100" src="css/qg_lp4.png" alt="Second slide">
                         </div>
                     </div>
                     </div>
@@ -21,13 +21,14 @@
 
     <div id="news">
         <h2>Today's LGBT News</h2>
-        <% console.log(response.articles) %>
-        <% console.log(response.articles.length) %>
+    
+        <b>
         <% for(i of response.articles) { %>
-            <% console.log(i.title) %>
-            <p><%= i.title %></p>
-            <p><%= i.source.name %></p>
+            <span id="news-inner">
+                <a href="<%= i.url %>"><p id="article"><%= i.title %> - <%= i.source.name %></p></a>
+            </span>
         <% } %>
+        </b>
     </div>
         
         <% include ./partials/baseScripts.ejs %>
