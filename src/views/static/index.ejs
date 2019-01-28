@@ -13,7 +13,7 @@
                             <img class="d-block w-100" src="css/qg_lp.png" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="css/qg_lp2.png" alt="Second slide">
+                            <img class="d-block w-100" src="css/qg_lp4.png" alt="Second slide">
                         </div>
                     </div>
                     </div>
@@ -21,20 +21,14 @@
 
     <div id="news">
         <h2>Today's LGBT News</h2>
-        <div class="content-slider">
-            <div class="slider">
-                <div class="mask">
-                    <% for(i of response.articles) { %>
-                         <ul>
-                            <li class="anim">
-                             <div class="quote"><%= i.title %></div>
-                             <div class="source"><%= i.source.name %></div>
-                            </li>
-                         </ul>
-                    <% } %>
-                </div>
-            </div>
-        </div>
+    
+        <b>
+        <% for(i of response.articles) { %>
+            <span id="news-inner">
+                <a href="<%= i.url %>"><p id="article"><%= i.title %> - <%= i.source.name %></p></a>
+            </span>
+        <% } %>
+        </b>
     </div>
         
         <% include ./partials/baseScripts.ejs %>
