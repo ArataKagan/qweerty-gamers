@@ -10,11 +10,22 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
                   <a class="nav-link" href="/">Home <span class="sr-only">(current)</span>
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav">
                 <% if(currentUser) { %>
                   <li class="nav-item">
                     <a class="nav-link" href="/users/sign_out">Sign out</a>
@@ -27,6 +38,16 @@
                     <a class="nav-link" href="/users/sign_up">Sign up</a>
                   </li>
                 <% } %>
+                <li>
+                   <a href="https://www.facebook.com/qweertygamers" class="fa fa-facebook"></a>
+                </li>
+                <li>
+                   <a href="https://twitter.com/qweertygamers?lang=en" class="fa fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-instagram"></a>
+                </li>
+                    
               </ul>
             </div>
         </div>
