@@ -106,4 +106,10 @@ b {
     87%{top:-320px;}
     90%{top:-360px;}
     97%{top:-360px;}
+} 
+
+.page-footer {
+    height: 50px;
+    margin-top: 60px;
+    background-color: #A0A0A0;
 }
