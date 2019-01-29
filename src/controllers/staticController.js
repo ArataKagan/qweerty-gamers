@@ -7,8 +7,9 @@ module.exports = {
        newsapi.v2.everything({
            q: 'lgbt',
            language: 'en',
-           page: 2
+           sortBy: 'publishedAt'
        }).then( response => {
+        console.log(response);
         res.render("static/index", {response});
         }
        ) 
